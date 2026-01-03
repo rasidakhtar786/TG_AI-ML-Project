@@ -1,0 +1,11 @@
+[ 2026-01-03 12:15:21,047 ] 37 root - INFO - Start data Ingestion
+[ 2026-01-03 12:15:25,551 ] 68 root - INFO - Peformed train test split on the dataframe
+[ 2026-01-03 12:15:25,551 ] 69 root - INFO - Exited split_data_as_train_test method of Data_Igestion class
+[ 2026-01-03 12:15:25,552 ] 74 root - INFO - Exporting train and test file path.
+[ 2026-01-03 12:15:25,630 ] 78 root - INFO - Exported train and test file path.
+[ 2026-01-03 12:15:25,631 ] 40 root - INFO - Data Ingestion Completed and artifact : DataIngestionArtifact(trained_file_path='Artifacts\\01_03_2026_12_15_17\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\01_03_2026_12_15_17\\data_ingestion\\ingested\\train.csv')
+[ 2026-01-03 12:15:25,643 ] 51 root - INFO - Initiate the data Validation
+[ 2026-01-03 12:15:25,705 ] 43 root - INFO - Required number of columns:2
+[ 2026-01-03 12:15:25,706 ] 45 root - INFO - Data frame has columns:31
+[ 2026-01-03 12:15:25,706 ] 43 root - INFO - Required number of columns:2
+[ 2026-01-03 12:15:25,706 ] 45 root - INFO - Data frame has columns:31
