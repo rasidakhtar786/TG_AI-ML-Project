@@ -25,6 +25,12 @@ from sklearn.ensemble import (
 )
 
 import mlflow
+from urllib.parse import urlparse
+import dagshub
+
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/tgaiml2025/networksecurity.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="tgaiml2025"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="3782a2b1346e46636bdaa32233298d3632bd65a0"
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
@@ -35,6 +41,8 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
         
     def track_mlflow(self,best_model,classificationmetric):
+        mlflow.set_registry_uri("https://dagshub.com/tgaiml2025/networksecurity.mlflow")
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
       
         with mlflow.start_run():
             f1_score=classificationmetric.f1_score

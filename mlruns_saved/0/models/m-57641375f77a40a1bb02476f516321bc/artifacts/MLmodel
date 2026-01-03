@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/admin/Desktop/TG AI-ML/Lectures/Day-24 Network Security
+  Project/networksecurity/mlruns/0/models/m-57641375f77a40a1bb02476f516321bc/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.8.1
+model_id: m-57641375f77a40a1bb02476f516321bc
+model_size_bytes: 76885
+model_uuid: m-57641375f77a40a1bb02476f516321bc
+prompts: null
+run_id: 80a3b59f0baf4a15bcb40afecb308334
+utc_time_created: '2026-01-02 22:24:32.574621'
